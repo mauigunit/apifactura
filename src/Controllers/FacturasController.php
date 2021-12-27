@@ -9,6 +9,6 @@ class FacturasController{
         $data = array('Authorization' => $headerValueString);
         $payload = json_encode($data);
         $response->getBody()->write($payload);
-        return $response->withHeader('Content-Type', 'application/json');
+        return $response->withHeader('Content-Type', 'application/json');;
     }
 }
